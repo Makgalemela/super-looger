@@ -10,9 +10,15 @@
 	</parent>
 	<groupId>com.host.logging</groupId>
 	<artifactId>logger</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.8-SNAPSHOT</version>
 	<name>logger</name>
 	<packaging>jar</packaging>
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<url>https://maven.pkg.github.com/Makgalemela/super-looger</url>
+		</repository>
+	</distributionManagement>
 
 	<description>The Project For logging requests</description>
 	<url/>
@@ -30,6 +36,7 @@
 	</scm>
 	<properties>
 		<java.version>17</java.version>
+		<gpr.token>$GITHUB_TOKEN</gpr.token>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -54,12 +61,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-aop</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>com.example</groupId>
-			<artifactId>Engine</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 	<build>

@@ -12,8 +12,15 @@ import java.util.Map;
 
 @Component
 public class PublishMessageOBS {
-//    private static final Logger logger = LoggerFactory.getLogger(PublishMessageOBS.class);
-//
+
+
+    private static final Logger logger = LoggerFactory.getLogger(PublishMessageOBS.class);
+    @Bean
+    public void update() {
+        logger.info("Updating publish message OBS");
+    }
+
+    //
 //
 //    private RabbitTemplate rabbitTemplate;
 //
